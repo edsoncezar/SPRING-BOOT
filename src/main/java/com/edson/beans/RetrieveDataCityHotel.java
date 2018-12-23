@@ -8,10 +8,9 @@ import java.util.List;
  *
  */
 public class RetrieveDataCityHotel {
-	
+
 	private List<City> cityRecord;
-	
-	
+
 	public List<City> getListOfCity() {
 		return cityRecord;
 	}

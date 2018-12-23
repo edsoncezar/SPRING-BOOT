@@ -6,14 +6,13 @@ package com.edson.beans;
  *
  */
 public class City {
-	
-	
+
 	int id;
-	
+
 	String name;
-	
+
 	int cityCode;
-	
+
 	String cityName;
 
 	public int getId() {
@@ -47,6 +46,5 @@ public class City {
 	public void setCityName(String cityName) {
 		this.cityName = cityName;
 	}
-	
 
 }

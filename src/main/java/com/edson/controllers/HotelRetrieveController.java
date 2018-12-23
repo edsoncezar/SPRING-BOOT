@@ -15,17 +15,15 @@ import com.edson.beans.City;
  */
 @Controller
 public class HotelRetrieveController {
-	
-	@RequestMapping(value="http://localhost:8080/hotels/{id}")
-	public ResponseEntity<City> getListOfHotel (@PathVariable("id") int id)
-	{
-		
-	    	City city = new City();
-	    	city.setId(id);
-	    
-	    	return new ResponseEntity<City>(city, HttpStatus.OK);
 
-	  
+	@RequestMapping(value = "/hotels/{id}")
+	public ResponseEntity<City> getListOfHotel(@PathVariable("id") int id) {
+
+		City city = new City();
+		city.setId(id);
+
+		return new ResponseEntity<City>(city, HttpStatus.OK);
+
 	}
 
 }
